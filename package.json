@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start:docker": "docker build -t coala-challenge-front . && docker run -p 3000:3000 coala-challenge-front",
     "lint": "next lint"
   },
   "dependencies": {
