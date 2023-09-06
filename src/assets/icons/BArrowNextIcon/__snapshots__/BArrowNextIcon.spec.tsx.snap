@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BArrowNextIcon applies custom props 1`] = `
+<svg
+  aria-hidden="true"
+  class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge css-bsqp9w-MuiSvgIcon-root"
+  data-testid="ArrowForwardIosIcon"
+  focusable="false"
+  viewBox="0 0 24 24"
+>
+  <path
+    d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
+  />
+</svg>
+`;
+
+exports[`BArrowNextIcon renders without errors 1`] = `
+<svg
+  aria-hidden="true"
+  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+  data-testid="ArrowForwardIosIcon"
+  focusable="false"
+  viewBox="0 0 24 24"
+>
+  <path
+    d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
+  />
+</svg>
+`;
