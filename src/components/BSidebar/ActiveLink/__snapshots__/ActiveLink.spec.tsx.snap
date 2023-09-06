@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActiveLink should render with a different asPath value 1`] = `
+<DocumentFragment>
+  <a
+    href="/some-other-path"
+  >
+    <p
+      is_active="0"
+    >
+      Some Other Path
+    </p>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`ActiveLink should render with a equal asPath value 1`] = `
+<DocumentFragment>
+  <a
+    href="/some-other-path"
+  >
+    <p
+      is_active="1"
+    >
+      Some Other Path
+    </p>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`ActiveLink should render with active status when href matches asPath 1`] = `
+<DocumentFragment>
+  <a
+    href="/"
+  >
+    <p
+      is_active="1"
+    >
+      Home
+    </p>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`ActiveLink should render without active status when href does not match asPath 1`] = `
+<DocumentFragment>
+  <a
+    href="/about"
+  >
+    <p
+      is_active="0"
+    >
+      Home
+    </p>
+  </a>
+</DocumentFragment>
+`;
