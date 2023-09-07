@@ -1,10 +1,9 @@
 export type IUser = {
-  id: number;
+  id: string;
   email: string;
   name: string;
   updatedAt: Date;
   createdAt: Date;
   deletedAt?: Date | null;
   photoUrl: string | null;
-  googleExternalId: string | null;
 };

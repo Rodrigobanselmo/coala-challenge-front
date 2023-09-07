@@ -30,7 +30,7 @@ export function setupAPIClient(ctx = undefined) {
 }
 
 const rejectAuth = () => {
-  if (window) {
+  if (typeof window !== "undefined") {
     signOut();
   } else {
     return Promise.reject(new AuthTokenError());

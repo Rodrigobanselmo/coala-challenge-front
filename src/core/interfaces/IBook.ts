@@ -1,6 +1,7 @@
 export type IBook = {
   id: number;
   title: string;
+  thumbnail?: string;
   description: string;
   authors?: string[];
   categories?: string[];
@@ -9,7 +10,6 @@ export type IBook = {
   publishedAt?: Date;
   language?: string;
   smallThumbnail?: string;
-  thumbnail?: string;
   updatedAt: Date;
   createdAt: Date;
   deletedAt?: Date;
