@@ -6,19 +6,19 @@ import { IPagination } from "@/core/interfaces/IPagination";
 import { IPaginationResult } from "@/core/interfaces/IPaginationResult";
 import { AxiosRequestConfig } from "axios";
 
-export interface IApiFindBooks {
+export interface IApiFindUsersBooks {
   search?: string;
 }
 
-export const getFindBooks = async (
-  query?: IApiFindBooks,
+export const getFindUsersBooks = async (
+  query?: IApiFindUsersBooks,
   pagination?: IPagination,
   config?: AxiosRequestConfig
 ) => {
   const queries = queryString.stringify({ ...query, ...pagination });
 
   const response = await api.get<IPaginationResult<IBook[]>>(
-    `${ApiRoutesEnum.FIND_BOOKS}?${queries}`,
+    `${ApiRoutesEnum.USERS_BOOKS}?${queries}`,
     config
   );
 

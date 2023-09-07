@@ -1,19 +1,18 @@
 import { QueryEnum } from "@/core/enums/query.enums";
 import { IBook } from "@/core/interfaces/IBook";
-import { IApiFindBooks, getFindBooks } from "@/core/services/api/getFindBooks";
+import { IApiFindBooks } from "@/core/services/api/getFindBooks";
+import { getSearchAllBooks } from "@/core/services/api/getSearchAllBooks";
 import { useInfiniteQuery } from "@tanstack/react-query";
 
-export function useInfiniteQueryBooks(
+export function useInfiniteQuerySearchAllBooks(
   query: IApiFindBooks,
   initialData?: IBook[]
 ) {
   const fetchFunction = async ({ pageParam = 1 }) => {
-    const result = await getFindBooks(
+    return getSearchAllBooks(
       { search: query.search },
       { page: pageParam, limit: 20 }
     );
-
-    return result.data;
   };
 
   const {
@@ -24,12 +23,12 @@ export function useInfiniteQueryBooks(
     isFetching,
     isFetchingNextPage,
     status,
-    refetch,
     isLoading,
-  } = useInfiniteQuery([QueryEnum.BOOKS, query], {
+  } = useInfiniteQuery([QueryEnum.SEARCH_ALL_BOOKS, query], {
     queryFn: fetchFunction,
-    refetchOnWindowFocus: false,
     getNextPageParam: (lastPage, pages) => pages.length + 1,
+    refetchOnWindowFocus: false,
+    enabled: !!query.search,
     initialData: initialData
       ? { pageParams: [1], pages: [initialData] }
       : undefined,
@@ -44,6 +43,5 @@ export function useInfiniteQueryBooks(
     isFetchingNextPage,
     status,
     isLoading,
-    refetch,
   };
 }

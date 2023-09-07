@@ -1,14 +1,18 @@
 import { QueryEnum } from "@/core/enums/query.enums";
 import { IBook } from "@/core/interfaces/IBook";
-import { IApiFindBooks, getFindBooks } from "@/core/services/api/getFindBooks";
+import { IErrorResponse } from "@/core/interfaces/IErrorResponse";
+import { IApiFindBooks } from "@/core/services/api/getFindBooks";
+import { getFindUsersBooks } from "@/core/services/api/getFindUsersBooks";
 import { useInfiniteQuery } from "@tanstack/react-query";
+import { useSnackbar } from "notistack";
 
-export function useInfiniteQueryBooks(
+export function useInfiniteQueryUsersBooks(
   query: IApiFindBooks,
   initialData?: IBook[]
 ) {
+  const { enqueueSnackbar } = useSnackbar();
   const fetchFunction = async ({ pageParam = 1 }) => {
-    const result = await getFindBooks(
+    const result = await getFindUsersBooks(
       { search: query.search },
       { page: pageParam, limit: 20 }
     );
@@ -24,12 +28,22 @@ export function useInfiniteQueryBooks(
     isFetching,
     isFetchingNextPage,
     status,
-    refetch,
+    failureReason,
     isLoading,
-  } = useInfiniteQuery([QueryEnum.BOOKS, query], {
+    refetch,
+  } = useInfiniteQuery([QueryEnum.USERS_BOOKS, query], {
     queryFn: fetchFunction,
-    refetchOnWindowFocus: false,
+    retry: (_, error: IErrorResponse) => {
+      if (error.response.status === 401) {
+        enqueueSnackbar("Você precisa estar logado para ver seus livros", {
+          variant: "error",
+        });
+        return false;
+      }
+      return true;
+    },
     getNextPageParam: (lastPage, pages) => pages.length + 1,
+    refetchOnWindowFocus: false,
     initialData: initialData
       ? { pageParams: [1], pages: [initialData] }
       : undefined,
@@ -44,6 +58,7 @@ export function useInfiniteQueryBooks(
     isFetchingNextPage,
     status,
     isLoading,
+    isNeedingAuth: failureReason?.response?.status === 401,
     refetch,
   };
 }

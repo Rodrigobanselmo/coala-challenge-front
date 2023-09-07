@@ -15,7 +15,7 @@ export const getSearchAllBooks = async (
 ) => {
   const queries = queryString.stringify({ ...query, ...pagination });
 
-  const response = await api.get<IPaginationResult<IBook>>(
+  const response = await api.get<IBook[]>(
     `${ApiRoutesEnum.SEARCH_ALL_BOOKS}?${queries}`
   );
 
