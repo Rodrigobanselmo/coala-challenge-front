@@ -6,7 +6,7 @@ interface LinkStyleProps extends LinkProps {
   is_active?: boolean;
 }
 
-export const LinkStyle = styled(Link)<LinkStyleProps>`
+export const StyledLinkStyle = styled(Link)<LinkStyleProps>`
   border-left: 3px solid transparent;
   align-items: center;
   transition: background-color 0.3s ease;

@@ -1,6 +1,6 @@
 import Drawer from "@mui/material/Drawer";
 
-import { FlexStyle } from "./styles";
+import { StyledFlex } from "./styles";
 import { useSidebarDrawer } from "@/core/contexts/SidebarContext";
 import { sectionsDrawer } from "@/constants/drawer.constants";
 import { SideBarNav } from "./SideBarNav";
@@ -17,14 +17,14 @@ export function BSidebar(): JSX.Element {
             keepMounted: false,
           }}
         >
-          <FlexStyle is_close={!isOpen ? 1 : 0} as="aside">
+          <StyledFlex is_close={!isOpen ? 1 : 0} as="aside">
             <SideBarNav sections={sectionsDrawer} />
-          </FlexStyle>
+          </StyledFlex>
         </Drawer>
       ) : (
-        <FlexStyle is_close={!isOpen ? 1 : 0} as="aside">
+        <StyledFlex is_close={!isOpen ? 1 : 0} as="aside">
           <SideBarNav sections={sectionsDrawer} />
-        </FlexStyle>
+        </StyledFlex>
       )}
     </>
   );

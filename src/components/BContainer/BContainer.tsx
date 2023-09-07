@@ -9,7 +9,14 @@ export const BContainer: FC<{ children: ReactNode } & SContainerProps> = ({
   ...props
 }) => {
   return (
-    <Box px={[10, 10, 15]} py={[10, 10, 15]} {...props}>
+    <Box
+      px={[10, 10, 15]}
+      py={[10, 10, 15]}
+      maxWidth={1250}
+      margin={"0 auto"}
+      overflow={"hidden"}
+      {...props}
+    >
       {children}
     </Box>
   );

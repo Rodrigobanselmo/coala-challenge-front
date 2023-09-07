@@ -4,7 +4,7 @@ import { styled, Stack, StackProps } from "@mui/material";
 interface StyledStackPros extends StackProps {
   is_close: number;
 }
-export const FlexStyle = styled(Stack)<StyledStackPros>`
+export const StyledFlex = styled(Stack)<StyledStackPros>`
   height: 100%;
   background-color: ${({ theme }) => theme.palette.sidebar.background};
   width: 18rem;

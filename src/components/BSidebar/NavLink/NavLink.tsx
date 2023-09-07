@@ -2,10 +2,8 @@ import { Box, Icon, Typography, styled } from "@mui/material";
 
 import { useSidebarDrawer } from "@/core/contexts/SidebarContext";
 import { ActiveLink } from "../ActiveLink";
-import { LinkStyle } from "./styles";
+import { StyledLinkStyle } from "./styles";
 import { INavLinkProps } from "./types";
-
-const BText = styled(Typography)``;
 
 export function NavLink({
   href,
@@ -20,7 +18,7 @@ export function NavLink({
     <>
       <Box maxWidth={"100%"}>
         <ActiveLink href={href} passHref>
-          <LinkStyle py="0.75rem" px={8} {...rest}>
+          <StyledLinkStyle py="0.75rem" px={8} {...rest}>
             <Icon
               component={icon}
               sx={{
@@ -30,7 +28,7 @@ export function NavLink({
               }}
             />
             <Box>
-              <BText
+              <Typography
                 ml={8}
                 fontSize={"1rem"}
                 fontWeight="medium"
@@ -43,9 +41,9 @@ export function NavLink({
                 }}
               >
                 {text}
-              </BText>
+              </Typography>
             </Box>
-          </LinkStyle>
+          </StyledLinkStyle>
         </ActiveLink>
       </Box>
     </>

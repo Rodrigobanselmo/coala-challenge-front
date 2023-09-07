@@ -12,10 +12,10 @@ export const BPageTitle: FC<{ children?: ReactNode } & SPageTitleProps> = ({
     <Box display="flex" alignItems="center">
       <Icon
         component={icon}
-        sx={{ fontSize: "22px", mr: 4, color: "text.main" }}
+        sx={{ fontSize: "30px", mr: 6, color: "text.main" }}
       />
       <Typography
-        fontSize={["1.3rem", "1.3rem", "1.563rem"]}
+        fontSize={["1.4rem", "1.5rem", "1.8rem"]}
         variant={"h1"}
         {...props}
       >

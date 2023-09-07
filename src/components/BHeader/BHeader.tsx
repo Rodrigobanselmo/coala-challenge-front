@@ -8,9 +8,11 @@ import { Typography } from "@mui/material";
 import { useRouter } from "next/router";
 import { drawerMap } from "@/constants/drawer.constants";
 import { Session } from "./Session";
+import { useAuth } from "@/core/contexts/AuthContext";
 
 export function BHeader(): JSX.Element {
   const { open, isTablet } = useSidebarDrawer();
+  const { user } = useAuth();
 
   return (
     <Stack
@@ -46,7 +48,7 @@ export function BHeader(): JSX.Element {
         }}
         ml="auto"
       >
-        <Profile />
+        <Profile user={user} />
       </Stack>
     </Stack>
   );

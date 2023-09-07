@@ -6,10 +6,9 @@ import Text from "@mui/material/Typography";
 
 import { IProfileProps } from "./types";
 import { useAuth } from "../../../core/contexts/AuthContext";
+import { BAvatar } from "@/components/BAvatar";
 
-export function Profile({}: IProfileProps): JSX.Element {
-  const { user } = useAuth();
-
+export function Profile({ user }: IProfileProps): JSX.Element {
   const name = user?.name || "";
   const email = user?.email || "";
 
@@ -29,22 +28,7 @@ export function Profile({}: IProfileProps): JSX.Element {
           </Text>
         </Box>
       )}
-      <Avatar
-        src={user?.photoUrl || "/icons/profile.svg"}
-        alt={name}
-        sx={{
-          backgroundColor: "gray.700",
-          width: ["32px", "48px"],
-          height: ["32px", "48px"],
-          "& .MuiAvatar-img": {
-            backgroundColor: "background.default",
-            objectFit: "cover",
-          },
-        }}
-      >
-        {name.split(" ")[0][0]}
-        {name.split(" ")[1]?.[0] || ""}
-      </Avatar>
+      <BAvatar photoUrl={user?.photoUrl} name={name} />
     </Box>
   );
 }

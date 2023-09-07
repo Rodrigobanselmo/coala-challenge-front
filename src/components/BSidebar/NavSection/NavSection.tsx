@@ -1,6 +1,6 @@
 import { Box, Stack } from "@mui/material";
 
-import { BoxStyledTitle, TextStyled } from "./styles";
+import { StyledBoxTitle, StyledText } from "./styles";
 import { INavSectionProps } from "./types";
 import { useSidebarDrawer } from "@/core/contexts/SidebarContext";
 
@@ -12,8 +12,8 @@ export function NavSection({
   const { isOpen } = useSidebarDrawer();
   return (
     <Box {...rest}>
-      <BoxStyledTitle color={isOpen ? "transparent" : "gray.700"} mx={8} px={4}>
-        <TextStyled
+      <StyledBoxTitle color={isOpen ? "transparent" : "gray.700"} mx={8} px={4}>
+        <StyledText
           align="left"
           color="gray.400"
           fontSize={13}
@@ -23,8 +23,8 @@ export function NavSection({
           }}
         >
           {title}
-        </TextStyled>
-      </BoxStyledTitle>
+        </StyledText>
+      </StyledBoxTitle>
       <Stack spacing={0} mt={8}>
         {children}
       </Stack>

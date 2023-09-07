@@ -12,7 +12,7 @@ export function ActiveLink({
 }: IActiveLinkProps): JSX.Element {
   const { asPath } = useRouter();
 
-  const isBasePath = asPath == "/";
+  const isBasePath = asPath.split("?")[0] == "/";
 
   const getIsActive = () => {
     if (isBasePath) {

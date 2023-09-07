@@ -3,9 +3,7 @@ import { Box, Button, Typography, styled } from "@mui/material";
 import { useAuth } from "@/core/contexts/AuthContext";
 import { ISessionProps } from "./types";
 
-const BText = styled(Typography)``;
-
-export function Session({}: ISessionProps): JSX.Element {
+export function Session(props: ISessionProps): JSX.Element {
   const { user, googleSignIn, signOut } = useAuth();
 
   return (

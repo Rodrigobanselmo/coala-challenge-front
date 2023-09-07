@@ -1,11 +1,11 @@
 import { Box, styled } from "@mui/material";
 
-export const BoxContainerStyled = styled(Box)`
+export const StyledBoxContainer = styled(Box)`
   width: 100%;
   align-items: flex-start;
 `;
 
-export const BoxSectionStyled = styled(Box)`
+export const StyledBoxSection = styled(Box)`
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;

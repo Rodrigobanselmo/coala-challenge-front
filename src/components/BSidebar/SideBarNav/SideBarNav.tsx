@@ -2,7 +2,7 @@ import { Stack } from "@mui/material";
 import { useRouter } from "next/router";
 
 import { LogoNavbar } from "../Logo";
-import { BoxContainerStyled, BoxSectionStyled } from "./styles";
+import { StyledBoxContainer, StyledBoxSection } from "./styles";
 import { useSidebarDrawer } from "@/core/contexts/SidebarContext";
 import { IDrawerSection } from "@/constants/drawer.constants";
 import { NavSection } from "../NavSection";
@@ -16,7 +16,7 @@ export function SideBarNav({
   const { isTablet, open, close } = useSidebarDrawer();
 
   return (
-    <BoxContainerStyled
+    <StyledBoxContainer
       onMouseEnter={isTablet ? () => {} : open}
       onMouseLeave={isTablet ? () => {} : close}
       py={12}
@@ -24,7 +24,7 @@ export function SideBarNav({
       <Stack mb={0} px={8} spacing={4}>
         <LogoNavbar />
       </Stack>
-      <BoxSectionStyled pt={10}>
+      <StyledBoxSection pt={10}>
         <Stack px={0} spacing={8}>
           {sections.map((category) => {
             if (category.items.length === 0) return null;
@@ -44,7 +44,7 @@ export function SideBarNav({
             );
           })}
         </Stack>
-      </BoxSectionStyled>
-    </BoxContainerStyled>
+      </StyledBoxSection>
+    </StyledBoxContainer>
   );
 }

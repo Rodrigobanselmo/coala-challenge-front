@@ -1,6 +1,6 @@
 import { Icon, Typography } from "@mui/material";
 
-import { STStack, STTypography, STLogoSimple } from "./styles";
+import { StyledStack, StyledTypography, StyledLogoSimple } from "./styles";
 import { useSidebarDrawer } from "@/core/contexts/SidebarContext";
 import { BIconButton } from "@/components/BIconButton";
 import { BMenuIcon } from "@/assets/icons/BMenuIcon";
@@ -11,9 +11,14 @@ export function LogoNavbar(): JSX.Element {
     useSidebarDrawer();
 
   return (
-    <STStack direction="row">
-      <STLogoSimple onClick={isOpen ? close : open} />
-      <STTypography onClick={isOpen ? close : open} ml={2} align="left" noWrap>
+    <StyledStack direction="row">
+      <StyledLogoSimple onClick={isOpen ? close : open} />
+      <StyledTypography
+        onClick={isOpen ? close : open}
+        ml={2}
+        align="left"
+        noWrap
+      >
         Book
         <Typography
           color={"primary.main"}
@@ -24,7 +29,7 @@ export function LogoNavbar(): JSX.Element {
         >
           Swap
         </Typography>
-      </STTypography>
+      </StyledTypography>
       <BIconButton
         color="info"
         onClick={() => (isTablet ? close() : setAlwaysOpen(!alwaysOpen))}
@@ -41,6 +46,6 @@ export function LogoNavbar(): JSX.Element {
           }}
         />
       </BIconButton>
-    </STStack>
+    </StyledStack>
   );
 }
