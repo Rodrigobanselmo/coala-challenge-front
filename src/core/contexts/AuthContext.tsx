@@ -53,7 +53,7 @@ export async function signOut(ctx?: any) {
 
   await firebaseAuth.signOut();
 
-  Router.push(RoutesEnum.WELCOME_PAGE);
+  // Router.push(RoutesEnum.WELCOME_PAGE);
 }
 
 export function AuthProvider({ children }: AuthProviderProps) {
