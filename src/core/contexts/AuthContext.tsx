@@ -63,7 +63,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
   const signOutFunc = useCallback(() => {
     setUser(null);
-    signOut().then(() => {
+    signOut().finally(() => {
       isLoading(false);
     });
   }, []);
@@ -125,7 +125,8 @@ export function AuthProvider({ children }: AuthProviderProps) {
   async function googleSignIn() {
     const result = await signInWithPopup(firebaseAuth, firebaseProvider).catch(
       (error) => {
-        console.log(error);
+        signOutFunc();
+        console.log(123, error);
         enqueueSnackbar("Erro ao tentar fazer login com o Google", {
           variant: "error",
         });
