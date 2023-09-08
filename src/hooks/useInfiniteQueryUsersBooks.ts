@@ -34,7 +34,7 @@ export function useInfiniteQueryUsersBooks(
   } = useInfiniteQuery([QueryEnum.USERS_BOOKS, query], {
     queryFn: fetchFunction,
     retry: (_, error: IErrorResponse) => {
-      if (error.response.status === 401) {
+      if (error?.response?.status === 401) {
         enqueueSnackbar("Você precisa estar logado para ver seus livros", {
           variant: "error",
         });

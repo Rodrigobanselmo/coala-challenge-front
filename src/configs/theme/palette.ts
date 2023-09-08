@@ -1,16 +1,15 @@
 const palette = {
   primary: {
+    light: "#4071d6",
+    main: "#2153b7",
+    dark: "#2153b7",
+    contrastText: "#fff",
+  },
+  secondary: {
     extraLight: "#fca557",
     light: "#f28338",
     main: "#F27329",
     dark: "#d9560b",
-    extraDark: "#93421a",
-    contrastText: "#fff",
-  },
-  secondary: {
-    light: "#4071d6",
-    main: "#2153b7",
-    dark: "#123e96",
     contrastText: "#fff",
   },
   sidebar: {
@@ -67,7 +66,7 @@ const palette = {
     light: "#899ed1",
   },
   background: {
-    default: "#dddee2",
+    default: "#F7FAFC",
     paper: "#FFFFFF",
     darkPaper: "#c4c4c4",
     dark: "#1A202C",

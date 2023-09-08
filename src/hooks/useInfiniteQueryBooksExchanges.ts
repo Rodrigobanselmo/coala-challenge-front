@@ -37,7 +37,7 @@ export function useInfiniteQueryBooksExchanges(
   } = useInfiniteQuery([QueryEnum.BOOKS_EXCHANGE, query], {
     queryFn: fetchFunction,
     retry: (_, error: IErrorResponse) => {
-      if (error.response.status === 401 || error.response.status === 403) {
+      if (error?.response?.status === 401 || error.response.status === 403) {
         enqueueSnackbar("Você precisa estar logado para ver suas trocas", {
           variant: "error",
         });

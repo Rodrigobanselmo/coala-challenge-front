@@ -18,7 +18,7 @@ export function setupAPIClient(ctx = undefined) {
       return response;
     },
     async (error: AxiosError) => {
-      if (error.response && error.response.status === 401) {
+      if (error?.response && error.response?.status === 401) {
         rejectAuth();
       }
 

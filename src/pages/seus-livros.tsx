@@ -65,7 +65,7 @@ export default function YourBooks({ books }: YourBooksPageProps) {
     fetchNextPage: fetchNextPageSearch,
     hasNextPage: hasNextPageSearch,
     isFetchingNextPage: isFetchingNextPageSearch,
-    isLoading: isFetchingSearch,
+    isFetching: isFetchingSearch,
   } = useInfiniteQuerySearchAllBooks(
     { search: debouncedSearchInputValue },
     books
@@ -76,7 +76,7 @@ export default function YourBooks({ books }: YourBooksPageProps) {
     fetchNextPage,
     hasNextPage,
     isFetchingNextPage,
-    isLoading,
+    isFetching,
     refetch,
   } = useInfiniteQueryUsersBooks({ search: debouncedSearchInputValue }, books);
 
@@ -111,7 +111,7 @@ export default function YourBooks({ books }: YourBooksPageProps) {
           fetchNextPage={fetchNextPage}
           hasNextPage={hasNextPage}
           isFetchingNextPage={isFetchingNextPage}
-          isLoading={isLoading}
+          isLoading={isFetching}
           placeholder={"Pesquisar livro que deseja adicionar..."}
           onSearchInputChange={setSearchInputValue}
           searchInputValue={searchInputValue}
