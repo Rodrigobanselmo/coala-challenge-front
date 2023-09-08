@@ -35,7 +35,7 @@ export const getServerSideProps: GetServerSideProps<
 
     if (search) {
       books = await getSearchAllBooks({ search: search as string });
-    } else {
+    } else if (token) {
       const booksData = await getFindUsersBooks(
         { search: search as string },
         {},
@@ -48,7 +48,6 @@ export const getServerSideProps: GetServerSideProps<
       props: { books },
     };
   } catch (error) {
-    console.log(error);
     return {
       props: { books },
     };

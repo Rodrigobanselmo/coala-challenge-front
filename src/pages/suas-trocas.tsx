@@ -36,14 +36,20 @@ export const getServerSideProps: GetServerSideProps<
     const token = cookies["nextauth.token"] || null;
     const headers = { Authorization: `Bearer ${token}` };
 
-    const exchangeData = await getFindBooksExchange(
-      { search: search as string },
-      {},
-      { headers }
-    );
+    if (token) {
+      const exchangeData = await getFindBooksExchange(
+        { search: search as string },
+        {},
+        { headers }
+      );
+
+      return {
+        props: { exchangeData: exchangeData.data },
+      };
+    }
 
     return {
-      props: { exchangeData: exchangeData.data },
+      props: { exchangeData: [] },
     };
   } catch (error) {
     return {
