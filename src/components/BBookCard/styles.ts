@@ -44,7 +44,7 @@ export const StyledAuthors = styled(Typography)`
   text-overflow: ellipsis;
 `;
 
-export const StyledExchangeButton = styled(Button)<{ is_visible: boolean }>`
+export const StyledExchangeButton = styled(Button)<{ is_visible: number }>`
   border: none;
   border-radius: 4px;
   padding: 8px 16px;

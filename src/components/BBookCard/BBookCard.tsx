@@ -22,11 +22,12 @@ export const BBookCard = ({
   const handleClickButton = async () => {
     if (!onClickButton || isLoading) return;
     setIsLoading(true);
-    onClickButton(book).finally(() => setIsLoading(false));
+    onClickButton?.(book)?.finally(() => setIsLoading(false));
   };
 
   return (
     <StyledCard
+      data-testid="StyledCard"
       onMouseEnter={() => setIsButtonVisible(true)}
       onMouseLeave={() => setIsButtonVisible(false)}
     >
@@ -44,7 +45,7 @@ export const BBookCard = ({
         {onClickButton && (
           <StyledExchangeButton
             onClick={handleClickButton}
-            is_visible={isButtonVisible}
+            is_visible={isButtonVisible ? 1 : 0}
             variant="contained"
             color="secondary"
             disabled={isLoading}

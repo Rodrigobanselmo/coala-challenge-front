@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BSidebar matches the snapshot with isOpen=false and isTablet=true 1`] = `<div />`;
+
+exports[`BSidebar matches the snapshot with isOpen=true and isTablet=false 1`] = `
+<div>
+  <aside
+    class="css-1o981aa"
+    is_close="0"
+  >
+    <div
+      class="MuiBox-root css-1daogsy"
+    >
+      <div
+        class="MuiStack-root css-1qz3af0-MuiStack-root"
+      >
+        <div
+          class="MuiStack-root css-961wsz-MuiStack-root"
+        >
+          <svg
+            class="css-fw9wz5"
+            height="1rem"
+            viewBox="0 0 640 640"
+            width="1rem"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs>
+              <path
+                d="m266.7 132.19 262.77 167.62L266.7 20.93v111.26Zm147.09 306.15 153.47-97.71-437-278.62v164.03c.14 4.8.83 9.51 2.07 14.14 1.25 4.63 3 9.05 5.29 13.27 2.27 4.22 5.01 8.12 8.2 11.71 3.19 3.57 6.75 6.73 10.69 9.49 6.82 4.34 40.94 26.08 102.37 65.19l154.91 98.5ZM168.78 398.4c-4.29 2.8-37.46 24.72-38.51 60.74v159.93L400.85 446.9 247.1 348.84c-41.77 26.43-67.88 42.95-78.32 49.56Z"
+                id="a"
+              />
+            </defs>
+            <use
+              fill="#F27329"
+              xlink:href="#a"
+            />
+            <use
+              fill-opacity="0"
+              stroke="#000"
+              stroke-opacity="0"
+              xlink:href="#a"
+            />
+          </svg>
+          <p
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-noWrap css-1l9enbr-MuiTypography-root"
+          >
+            Book
+            <span
+              class="MuiTypography-root MuiTypography-body1 css-kgpo3t-MuiTypography-root"
+            >
+              Swap
+            </span>
+          </p>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInfo MuiIconButton-sizeMedium css-43eudz-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium material-icons notranslate MuiIcon-root MuiIcon-fontSizeMedium css-kic248-MuiSvgIcon-root-MuiIcon-root"
+              data-testid="MenuIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root css-19a83ym"
+      >
+        <div
+          class="MuiStack-root css-1t035bm-MuiStack-root"
+        >
+          <div
+            class="MuiBox-root css-0"
+          >
+            <div
+              class="MuiBox-root css-30iklk"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-r459dm-MuiTypography-root"
+              >
+                Livros
+              </p>
+            </div>
+            <div
+              class="MuiStack-root css-1da3byd-MuiStack-root"
+            >
+              <div
+                class="MuiBox-root css-9whsf3"
+              >
+                <a
+                  href="/"
+                >
+                  <a
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1k6yrop-MuiTypography-root-MuiLink-root"
+                    is_active="1"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium material-icons notranslate MuiIcon-root MuiIcon-fontSizeMedium css-qrqti-MuiSvgIcon-root-MuiIcon-root"
+                      data-testid="AutoStoriesIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m19 1-5 5v11l5-4.5V1zM1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5V6c-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6zm22 13.5V6c-.6-.45-1.25-.75-2-1v13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5v2c1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5v-1.1z"
+                      />
+                    </svg>
+                    <div
+                      class="MuiBox-root css-0"
+                    >
+                      <p
+                        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-8lqm6b-MuiTypography-root"
+                      >
+                        Livros para Troca
+                      </p>
+                    </div>
+                  </a>
+                </a>
+              </div>
+              <div
+                class="MuiBox-root css-9whsf3"
+              >
+                <a
+                  href="/seus-livros"
+                >
+                  <a
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1c53box-MuiTypography-root-MuiLink-root"
+                    is_active="0"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium material-icons notranslate MuiIcon-root MuiIcon-fontSizeMedium css-qrqti-MuiSvgIcon-root-MuiIcon-root"
+                      data-testid="LocalLibraryIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 11.55C9.64 9.35 6.48 8 3 8v11c3.48 0 6.64 1.35 9 3.55 2.36-2.19 5.52-3.55 9-3.55V8c-3.48 0-6.64 1.35-9 3.55zM12 8c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3z"
+                      />
+                    </svg>
+                    <div
+                      class="MuiBox-root css-0"
+                    >
+                      <p
+                        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-8lqm6b-MuiTypography-root"
+                      >
+                        Seus Livros
+                      </p>
+                    </div>
+                  </a>
+                </a>
+              </div>
+              <div
+                class="MuiBox-root css-9whsf3"
+              >
+                <a
+                  href="/suas-trocas"
+                >
+                  <a
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1c53box-MuiTypography-root-MuiLink-root"
+                    is_active="0"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium material-icons notranslate MuiIcon-root MuiIcon-fontSizeMedium css-qrqti-MuiSvgIcon-root-MuiIcon-root"
+                      data-testid="PublishedWithChangesIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m17.66 9.53-7.07 7.07-4.24-4.24 1.41-1.41 2.83 2.83 5.66-5.66 1.41 1.41zM4 12c0-2.33 1.02-4.42 2.62-5.88L9 8.5v-6H3l2.2 2.2C3.24 6.52 2 9.11 2 12c0 5.19 3.95 9.45 9 9.95v-2.02c-3.94-.49-7-3.86-7-7.93zm18 0c0-5.19-3.95-9.45-9-9.95v2.02c3.94.49 7 3.86 7 7.93 0 2.33-1.02 4.42-2.62 5.88L15 15.5v6h6l-2.2-2.2c1.96-1.82 3.2-4.41 3.2-7.3z"
+                      />
+                    </svg>
+                    <div
+                      class="MuiBox-root css-0"
+                    >
+                      <p
+                        class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-8lqm6b-MuiTypography-root"
+                      >
+                        Suas Trocas
+                      </p>
+                    </div>
+                  </a>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+`;

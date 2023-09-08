@@ -8,5 +8,5 @@ export interface HeaderListProps {
   onSearchInputChange: (value: string) => void;
   placeholder?: string;
   title: string;
-  inputRef: React.RefObject<HTMLInputElement>;
+  inputRef?: React.RefObject<HTMLInputElement>;
 }

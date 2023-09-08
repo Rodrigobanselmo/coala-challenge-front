@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Session matches the snapshot when user is authenticated 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-k008qs"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-5xoqx6-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Entrar
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-1pezyni-MuiTypography-root"
+    >
+      Iniciar Sessão
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Session matches the snapshot when user is null 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-k008qs"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-5xoqx6-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Entrar
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-1pezyni-MuiTypography-root"
+    >
+      Iniciar Sessão
+    </p>
+  </div>
+</div>
+`;

@@ -1,20 +1,16 @@
-import { IBook } from "@/core/interfaces/IBook";
-import {
-  StyledAuthors,
-  StyledExchangeButton,
-  StykedCard,
-  StyledBookInfo,
-  StyledTitle,
-  StyledBookBox,
-  StyledImageBox,
-} from "./styles";
-import Image from "next/image";
+import { useAuth } from "../../core/contexts/AuthContext";
+import { Button } from "@mui/material";
 import { useState } from "react";
-import { BBookCardProps } from "./types";
-import { useAuth } from "@/core/contexts/AuthContext";
-import { Profile } from "../BHeader/Profile";
-import { Box, Button } from "@mui/material";
 import { CardProfile } from "./components/CardProfile";
+import {
+  StykedCard,
+  StyledAuthors,
+  StyledBookBox,
+  StyledBookInfo,
+  StyledImageBox,
+  StyledTitle,
+} from "./styles";
+import { BBookCardProps } from "./types";
 
 export const BBookExchangeCard = ({
   bookExchange,
@@ -31,39 +27,38 @@ export const BBookExchangeCard = ({
   };
 
   const interestBook = bookExchange.interestBook;
+  const askingBook = bookExchange.askingBook;
 
   return (
     <StykedCard>
-      {interestBook && (
-        <StyledBookBox>
+      <StyledBookBox>
+        <StyledImageBox
+          src={interestBook?.thumbnail || "/images/book-placeholder.png"}
+          alt={interestBook?.title || "livro-placeholder"}
+          height={100}
+          width={66}
+        />
+        <StyledBookInfo>
+          <StyledTitle>{interestBook?.title}</StyledTitle>
+          <StyledAuthors>{interestBook?.authors?.join(", ")}</StyledAuthors>
+        </StyledBookInfo>
+      </StyledBookBox>
+      <Button sx={{ height: 50, m: "auto" }}>tocar</Button>
+      <StyledBookBox>
+        {askingBook?.thumbnail && (
           <StyledImageBox
-            src={interestBook.thumbnail || "/images/book-placeholder.png"}
-            alt={interestBook.title}
+            src={askingBook?.thumbnail || "/images/book-placeholder.png"}
+            alt={askingBook?.title || "livro-placeholder"}
             height={100}
             width={66}
           />
-          <StyledBookInfo>
-            <StyledTitle>{interestBook.title}</StyledTitle>
-            <StyledAuthors>{interestBook.authors?.join(", ")}</StyledAuthors>
-          </StyledBookInfo>
-        </StyledBookBox>
-      )}
-      <Button>tocar</Button>
-      {interestBook && (
-        <StyledBookBox>
-          <StyledImageBox
-            src={interestBook.thumbnail || "/images/book-placeholder.png"}
-            alt={interestBook.title}
-            height={100}
-            width={66}
-          />
-          {/* <CardProfile user={bookExchange.interetUser} /> */}
-          <StyledBookInfo>
-            <StyledTitle>{interestBook.title}</StyledTitle>
-            <StyledAuthors>{interestBook.authors?.join(", ")}</StyledAuthors>
-          </StyledBookInfo>
-        </StyledBookBox>
-      )}
+        )}
+        <CardProfile user={user} />
+        <StyledBookInfo>
+          <StyledTitle>{askingBook?.title}</StyledTitle>
+          <StyledAuthors>{askingBook?.authors?.join(", ")}</StyledAuthors>
+        </StyledBookInfo>
+      </StyledBookBox>
     </StykedCard>
   );
 };

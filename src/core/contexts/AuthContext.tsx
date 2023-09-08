@@ -16,7 +16,7 @@ import Router, { useRouter } from "next/router";
 import { destroyCookie, parseCookies, setCookie } from "nookies";
 import { useSnackbar } from "notistack";
 
-import { firebaseAuth, firebaseProvider } from "@/configs/firebase";
+import { firebaseAuth, firebaseProvider } from "../../configs/firebase";
 
 import { ApiRoutesEnum } from "@/core/enums/api-routes.enums";
 
@@ -52,8 +52,6 @@ export async function signOut(ctx?: any) {
   if (authChannel) authChannel.postMessage("signOut");
 
   await firebaseAuth.signOut();
-
-  // Router.push(RoutesEnum.WELCOME_PAGE);
 }
 
 export function AuthProvider({ children }: AuthProviderProps) {

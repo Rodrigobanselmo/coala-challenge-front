@@ -13,7 +13,7 @@ const config = {
     testEnvironment: 'jest-environment-jsdom',
     preset: 'ts-jest',
     collectCoverageFrom: [
-        '**/*.{js,jsx,ts,tsx}',
+        '**/*.{ts,tsx}',
         '!**/index.{js,jsx,ts,tsx}',
         '!**/styles.{js,jsx,ts,tsx}',
         '!**/types.{js,jsx,ts,tsx}',

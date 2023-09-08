@@ -1,11 +1,10 @@
-import React, { FC } from "react";
+import { FC, ReactNode } from "react";
 
 import CircularProgress from "@mui/material/CircularProgress";
-import IconButton from "@mui/material/IconButton";
-import { SIconButtonProps } from "./types";
 import { StyledBIconButton } from "./styles";
+import { SIconButtonProps } from "./types";
 
-export const BIconButton: FC<{ children?: any } & SIconButtonProps> = ({
+export const BIconButton: FC<{ children?: ReactNode } & SIconButtonProps> = ({
   circularProps,
   loading,
   children,

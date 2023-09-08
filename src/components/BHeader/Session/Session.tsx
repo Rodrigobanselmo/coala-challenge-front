@@ -1,6 +1,6 @@
 import { Box, Button, Typography, styled } from "@mui/material";
 
-import { useAuth } from "@/core/contexts/AuthContext";
+import { useAuth } from "../../../core/contexts/AuthContext";
 import { ISessionProps } from "./types";
 
 export function Session(props: ISessionProps): JSX.Element {

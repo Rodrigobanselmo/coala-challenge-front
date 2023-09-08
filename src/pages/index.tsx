@@ -42,7 +42,7 @@ export const getServerSideProps: GetServerSideProps<HomePageProps> = async (
   }
 };
 
-export default function Home({ books }: HomePageProps) {
+export default function WelcomePage({ books }: HomePageProps) {
   const { googleSignIn, user } = useAuth();
 
   const { debouncedSearchInputValue, searchInputValue, setSearchInputValue } =

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-0"
+    style="align-items: center; display: flex; cursor: pointer;"
+  >
+    <div
+      class="MuiBox-root css-1aoryhx"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1a8qzm-MuiTypography-root"
+      >
+        John Doe
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-148lykm-MuiTypography-root"
+      >
+        john@example.com
+      </p>
+    </div>
+    <div
+      class="MuiAvatar-root MuiAvatar-circular css-8v8enj-MuiAvatar-root"
+      data-testid="BAvatar"
+    >
+      <img
+        alt="John Doe"
+        class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+        src="/path/to/photo.png"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Profile matches the snapshot when user is null 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-0"
+    style="align-items: center; display: flex; cursor: pointer;"
+  >
+    <div
+      class="MuiAvatar-root MuiAvatar-circular css-8v8enj-MuiAvatar-root"
+      data-testid="BAvatar"
+    >
+      <img
+        alt=""
+        class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+        src="/icons/profile.svg"
+      />
+    </div>
+  </div>
+</div>
+`;

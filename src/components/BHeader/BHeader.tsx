@@ -2,13 +2,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 
+import { useAuth } from "../../core/contexts/AuthContext";
+import { useSidebarDrawer } from "../../core/contexts/SidebarContext";
 import { Profile } from "./Profile";
-import { useSidebarDrawer } from "@/core/contexts/SidebarContext";
-import { Typography } from "@mui/material";
-import { useRouter } from "next/router";
-import { drawerMap } from "@/constants/drawer.constants";
 import { Session } from "./Session";
-import { useAuth } from "@/core/contexts/AuthContext";
 
 export function BHeader(): JSX.Element {
   const { open, isTablet } = useSidebarDrawer();

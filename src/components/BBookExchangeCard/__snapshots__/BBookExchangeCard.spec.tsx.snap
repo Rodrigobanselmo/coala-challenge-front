@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BBookExchangeCard matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-5w22mz"
+  >
+    <div
+      class="MuiBox-root css-tl6mcv"
+    >
+      <img
+        alt="Interest Book"
+        class="css-qgb03h"
+        data-nimg="1"
+        decoding="async"
+        height="100"
+        loading="lazy"
+        src="/_next/image?url=%2Finterest-book.png&w=256&q=75"
+        srcset="/_next/image?url=%2Finterest-book.png&w=96&q=75 1x, /_next/image?url=%2Finterest-book.png&w=256&q=75 2x"
+        style="color: transparent;"
+        width="66"
+      />
+      <div
+        class="MuiBox-root css-j1dvnu"
+      >
+        <h2
+          class="css-11aljab"
+        >
+          Interest Book
+        </h2>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-16gwivt-MuiTypography-root"
+        >
+          Author 1, Author 2
+        </p>
+      </div>
+    </div>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-i90wq5-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      tocar
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+    <div
+      class="MuiBox-root css-tl6mcv"
+    >
+      <img
+        alt="Asking Book"
+        class="css-qgb03h"
+        data-nimg="1"
+        decoding="async"
+        height="100"
+        loading="lazy"
+        src="/_next/image?url=%2Fasking-book.png&w=256&q=75"
+        srcset="/_next/image?url=%2Fasking-book.png&w=96&q=75 1x, /_next/image?url=%2Fasking-book.png&w=256&q=75 2x"
+        style="color: transparent;"
+        width="66"
+      />
+      <div
+        class="MuiBox-root css-0"
+        style="align-items: center; display: flex;"
+      >
+        <div
+          class="MuiAvatar-root MuiAvatar-circular css-8v8enj-MuiAvatar-root"
+          data-testid="BAvatar"
+        >
+          <img
+            alt=""
+            class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+            src="/icons/profile.svg"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiBox-root css-j1dvnu"
+      >
+        <h2
+          class="css-11aljab"
+        >
+          Asking Book
+        </h2>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-16gwivt-MuiTypography-root"
+        >
+          Author A, Author B
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BBookExchangeCard matches the snapshot with missing askingBook 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-5w22mz"
+  >
+    <div
+      class="MuiBox-root css-tl6mcv"
+    >
+      <img
+        alt="Interest Book"
+        class="css-qgb03h"
+        data-nimg="1"
+        decoding="async"
+        height="100"
+        loading="lazy"
+        src="/_next/image?url=%2Finterest-book.png&w=256&q=75"
+        srcset="/_next/image?url=%2Finterest-book.png&w=96&q=75 1x, /_next/image?url=%2Finterest-book.png&w=256&q=75 2x"
+        style="color: transparent;"
+        width="66"
+      />
+      <div
+        class="MuiBox-root css-j1dvnu"
+      >
+        <h2
+          class="css-11aljab"
+        >
+          Interest Book
+        </h2>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-16gwivt-MuiTypography-root"
+        >
+          Author 1, Author 2
+        </p>
+      </div>
+    </div>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-i90wq5-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      tocar
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+    <div
+      class="MuiBox-root css-tl6mcv"
+    >
+      <div
+        class="MuiBox-root css-0"
+        style="align-items: center; display: flex;"
+      >
+        <div
+          class="MuiAvatar-root MuiAvatar-circular css-8v8enj-MuiAvatar-root"
+          data-testid="BAvatar"
+        >
+          <img
+            alt=""
+            class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+            src="/icons/profile.svg"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiBox-root css-j1dvnu"
+      >
+        <h2
+          class="css-11aljab"
+        />
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-16gwivt-MuiTypography-root"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BBookExchangeCard matches the snapshot with missing interestBook 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-5w22mz"
+  >
+    <div
+      class="MuiBox-root css-tl6mcv"
+    >
+      <img
+        alt="livro-placeholder"
+        class="css-qgb03h"
+        data-nimg="1"
+        decoding="async"
+        height="100"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Fbook-placeholder.png&w=256&q=75"
+        srcset="/_next/image?url=%2Fimages%2Fbook-placeholder.png&w=96&q=75 1x, /_next/image?url=%2Fimages%2Fbook-placeholder.png&w=256&q=75 2x"
+        style="color: transparent;"
+        width="66"
+      />
+      <div
+        class="MuiBox-root css-j1dvnu"
+      >
+        <h2
+          class="css-11aljab"
+        />
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-16gwivt-MuiTypography-root"
+        />
+      </div>
+    </div>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-i90wq5-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      tocar
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+    <div
+      class="MuiBox-root css-tl6mcv"
+    >
+      <img
+        alt="Asking Book"
+        class="css-qgb03h"
+        data-nimg="1"
+        decoding="async"
+        height="100"
+        loading="lazy"
+        src="/_next/image?url=%2Fasking-book.png&w=256&q=75"
+        srcset="/_next/image?url=%2Fasking-book.png&w=96&q=75 1x, /_next/image?url=%2Fasking-book.png&w=256&q=75 2x"
+        style="color: transparent;"
+        width="66"
+      />
+      <div
+        class="MuiBox-root css-0"
+        style="align-items: center; display: flex;"
+      >
+        <div
+          class="MuiAvatar-root MuiAvatar-circular css-8v8enj-MuiAvatar-root"
+          data-testid="BAvatar"
+        >
+          <img
+            alt=""
+            class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+            src="/icons/profile.svg"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiBox-root css-j1dvnu"
+      >
+        <h2
+          class="css-11aljab"
+        >
+          Asking Book
+        </h2>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-16gwivt-MuiTypography-root"
+        >
+          Author A, Author B
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

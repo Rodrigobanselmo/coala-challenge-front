@@ -2,7 +2,7 @@ export type IBook = {
   id: number;
   title: string;
   thumbnail?: string;
-  description: string;
+  description?: string;
   authors?: string[];
   categories?: string[];
   pageCount?: number;

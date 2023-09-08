@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BContainer matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-t0di4r"
+  >
+    <div>
+      Content goes here
+    </div>
+  </div>
+</div>
+`;

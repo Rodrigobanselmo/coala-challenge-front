@@ -1,14 +1,12 @@
 import React, { FC, Fragment } from "react";
 
 import { Box, Button, LinearProgress } from "@mui/material";
-import { BBookCard } from "../BBookCard";
-import { StyledGridContainer } from "../BBookCard/styles";
-import { BEmptyBlock } from "../BEmptyBlock";
+import { BBookExchangeCard } from "../BBookExchangeCard";
 import { BButtonLoadMore } from "../BButtonLoadMore";
+import { BEmptyBlock } from "../BEmptyBlock";
 import { HeaderList } from "../BHeaderList";
 import { StyledBoxContainerList } from "./styles";
 import { BBooksExchangeProps } from "./types";
-import { BBookExchangeCard } from "../BBookExchangeCard";
 
 export const BBooksExchangeList: FC<BBooksExchangeProps> = ({
   data,
@@ -68,7 +66,7 @@ export const BBooksExchangeList: FC<BBooksExchangeProps> = ({
               ))}
             </Box>
 
-            {loadMore && !emptyBooks && (
+            {!emptyBooks && (
               <BButtonLoadMore
                 canLoadMore={!noMoreBooks}
                 fetchNextPage={fetchNextPage}
@@ -85,7 +83,7 @@ export const BBooksExchangeList: FC<BBooksExchangeProps> = ({
                     text={emptyBookLable}
                     endComponent={
                       <Button variant="outlined" onClick={() => onFocuInput()}>
-                        Adicionar livro
+                        Pesquisar
                       </Button>
                     }
                   />
