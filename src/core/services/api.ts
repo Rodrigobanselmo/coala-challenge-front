@@ -33,6 +33,6 @@ const rejectAuth = () => {
   if (typeof window !== "undefined") {
     signOut();
   } else {
-    return Promise.reject(new AuthTokenError());
+    return Promise.reject();
   }
 };
