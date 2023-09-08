@@ -48,6 +48,7 @@ export const getServerSideProps: GetServerSideProps<
       props: { books },
     };
   } catch (error) {
+    console.log(error);
     return {
       props: { books },
     };

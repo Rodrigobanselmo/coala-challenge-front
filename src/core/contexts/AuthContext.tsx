@@ -125,6 +125,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
   async function googleSignIn() {
     const result = await signInWithPopup(firebaseAuth, firebaseProvider).catch(
       (error) => {
+        console.log(error);
         enqueueSnackbar("Erro ao tentar fazer login com o Google", {
           variant: "error",
         });
