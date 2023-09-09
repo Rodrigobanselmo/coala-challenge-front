@@ -47,7 +47,7 @@ exports[`BSidebar matches the snapshot with isOpen=true and isTablet=false 1`] =
           >
             Book
             <span
-              class="MuiTypography-root MuiTypography-body1 css-kgpo3t-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body1 css-1kca2yd-MuiTypography-root"
             >
               Swap
             </span>
@@ -102,7 +102,7 @@ exports[`BSidebar matches the snapshot with isOpen=true and isTablet=false 1`] =
                   href="/"
                 >
                   <a
-                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1k6yrop-MuiTypography-root-MuiLink-root"
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-160s4w9-MuiTypography-root-MuiLink-root"
                     is_active="1"
                   >
                     <svg
@@ -135,7 +135,7 @@ exports[`BSidebar matches the snapshot with isOpen=true and isTablet=false 1`] =
                   href="/seus-livros"
                 >
                   <a
-                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1c53box-MuiTypography-root-MuiLink-root"
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-h8zvko-MuiTypography-root-MuiLink-root"
                     is_active="0"
                   >
                     <svg
@@ -168,7 +168,7 @@ exports[`BSidebar matches the snapshot with isOpen=true and isTablet=false 1`] =
                   href="/suas-trocas"
                 >
                   <a
-                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1c53box-MuiTypography-root-MuiLink-root"
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-h8zvko-MuiTypography-root-MuiLink-root"
                     is_active="0"
                   >
                     <svg
