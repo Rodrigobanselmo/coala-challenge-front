@@ -54,7 +54,7 @@ export default function UrlGenerator() {
 
     <div style={{display:'flex', marginBottom: 10}}>
       <label style={{ display: 'block', marginBottom: '10px', marginRight:20 }}>
-        Modelo da mensagem:
+        Modelo da mensagem*:
         <input
           type="text"
           value={messageModel}
@@ -63,7 +63,7 @@ export default function UrlGenerator() {
         />
       </label>
       <label style={{ display: 'block', marginBottom: '10px' }}>
-        Telefone:
+        Telefone*:
         <input
           type="text"
           value={telephone}
