@@ -9,11 +9,11 @@ export default function UrlGenerator() {
   const generateUrl = useCallback(() => {
     const baseUrl = 'https://xbufnj2ue8.execute-api.us-east-1.amazonaws.com';
     const queryString = params
-      .map((param, i) => param ? `var_${i + 1}=${encodeURIComponent(param)}` : '')
+      .map((param, i) => param ? `var_${i + 1}=${(param)}` : '')
       .filter(Boolean)
       .join('&');
 
-    return `${baseUrl}?modelo_mensagem=${encodeURIComponent(messageModel)}&telefone=${encodeURIComponent(telephone)}&${queryString}`;
+    return `${baseUrl}?modelo_mensagem=${(messageModel)}&telefone=${(telephone)}&${queryString}`;
   }, [params, messageModel, telephone]);
 
   const handleParamChange = (index: number, value: string) => {
